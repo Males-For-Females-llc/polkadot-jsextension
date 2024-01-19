@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "composite": false
+  },
+  "include": [
+    "packages/**/src/**/*",
+    "packages/**/webpack.*.cjs",
+    ".prettierrc.cjs",
+    "eslint.config.js",
+    "i18next-scanner.config.cjs",
+    "rollup.config.js"
+  ],
+  "exclude": [
+    "**/node_modules/**/*"
+  ]
+}
